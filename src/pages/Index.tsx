@@ -7,7 +7,7 @@ import Reveal from "@/components/Reveal";
 import Countdown from "@/components/Countdown";
 import Timeline from "@/components/Timeline";
 import MusicToggle from "@/components/MusicToggle";
-import newImage from "@/assets/b706a6d8-920f-4356-9f82-145878965c17.jpeg";
+import newImage from "@/assets/29BE227C-EBB7-4423-946C-E87E35AC98DB.png";
 import starSvg from "@/assets/countdown-star.svg";
 import { useLang } from "@/i18n/LanguageContext";
 
