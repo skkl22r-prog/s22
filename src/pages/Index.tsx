@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { MapPin, QrCode, Baby, Camera, Clock, CalendarDays } from "lucide-react";
 import invitationImg from "@/assets/video-output-9B5ECA8D-034F-419B-A85A-98CA7DF3D9F9-1.mp4";
 import Envelope from "@/components/Envelope";
+import gaim from "@/assets/gaim.svg";
 import Reveal from "@/components/Reveal";
 import Countdown from "@/components/Countdown";
 import Timeline from "@/components/Timeline";
@@ -445,19 +446,27 @@ const Index = () => {
           </section>
 
           {/* Footer */}
-          <footer className="px-4 py-12 text-center">
-            <Reveal>
-              <a
-                href="https://www.tiktok.com/@shim2t?_r=1&_t=ZS-95w0d8f7vnk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mt-2 text-sm underline underline-offset-4"
-                style={{ color: "#EFE6DE" }}
-              >
-                {t("tiktok")}
-              </a>
-            </Reveal>
-          </footer>
+<footer className="px-4 py-12 text-center">
+  <Reveal>
+    <a
+      href="https://www.tiktok.com/@shim2t?_r=1&_t=ZS-95w0d8f7vnk"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 text-sm underline underline-offset-4"
+      style={{ color: "#EFE6DE" }}
+    >
+      <img
+        src={gaim}
+        alt=""
+        className="w-5 h-5"
+        style={{
+          filter: "brightness(0) saturate(100%) invert(95%)"
+        }}
+      />
+      {t("tiktok")}
+    </a>
+  </Reveal>
+</footer>
         </main>
       )}
     </div>
